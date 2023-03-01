@@ -5,15 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boas vindas!</title>
+    <style>
+        body{
+            background-color: aqua;
+            
+        
+
+    </style>
 </head>
 
 <body>
-    
+    <input type="text" name="nome" id="nome">
+    <input type="button" value="Pronto" onclick="pronto()">
+    <div id="mensagem">...</div>
 </body>
 
 <script>
-    var nome = (prompt('Qual seu nome?'))
-    alert(`olá ${nome}, é um prazer te conhecer!`)
+
+    function  pronto() {
+        var nome1 = window.document.getElementById("nome")
+        var mensagem = window.document.getElementById("mensagem")
+        nome1 = (nome1.value)
+        mensagem.innerText = `Olá ${nome1}, é um prazer lhe conhecer.` 
+    }
+
 </script>
 
 </html>
