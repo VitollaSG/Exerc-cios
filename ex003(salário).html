@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário de funcionário</title>
+    <style>
+        body{
+            background-color: rgb(127, 246, 255);
+            font: 15Pt Arial;
+        }
+        input#funcionario{
+            font: 10pt Arial black;
+            border-color: black;
+        }
+        input#Salario{
+            font: 10pt Arial black;
+            border-color: black;
+        }
+        h1{
+            font: 40px Arial black;
+            font-style: oblique;
+            
+        }
+        div#provento{
+            font: 25px Arial black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Informando Salário</h1>
+    <input type="text" name="funcionario" id="funcionario">
+    <input type="number" name="Salario" id="Salario">
+    <input type="button" value="Ok" onclick="ok()"> 
+    <div id="provento">...</div>
+</body>
+<script>
+    function ok() {
+    var nome = document.getElementById("funcionario")
+    var sal = document.getElementById("Salario")
+    var nome = nome.value
+    var sal = sal.value
+    provento.innerHTML = `O salário de ${nome} é de R$${sal} reais`
+    
+    }
+</script>
+
+</html>
