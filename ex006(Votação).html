@@ -5,24 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votação</title>
+
+    <style>
+        body{
+            background-color: rgb(157, 255, 206);
+        }
+        h1{
+            font: 38px Arial;
+            color: black;
+        }
+        input#nome{
+            width: 100pt;
+        }
+        input#anonasc{
+            width: 80pt;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Sistemas de votação</h1>
-    
-    <input type="text" name="nome" id="nome">
-    <input type="number" name="idade" id="idade">
+    <h1>Verificação de maior idade</h1>
+    <h3>Digite seu nome e ano de nascimento</h3>   
+    <input type="text" name="nome" id="nome"> 
+    <input type="number" name="anonasc" id="anonasc">
     <input type="button" value="Ok" onclick="pronto()">
     <div id="res"></div>
 
     <script>
-        function pronto()
+        function pronto(){
 
-        var nome = window.document.getElementById("nome")
-        var idade = window.document.getElementById("idade")
-        var res = window.document.getElementById("res")
-        var nome = (nome.value)
-        var idade = Number(idade.value)
-        res.innerHTML = `Olá ${nome} sua idade é ${idade} anos`
+            var nome = window.document.getElementById("nome")
+            var idade = window.document.getElementById("anonasc")
+            var res = window.document.getElementById("res")
+            var nome = (nome.value)
+            var idade = Number(anonasc.value)
+            var s1 = Number(2023 - idade)
+            var s2 = Number(18 - s1)
+            res.innerHTML = `Olá ${nome}, você tem ${s1} anos, `
+        
+        if (s1 >= 18) {
+            res.innerHTML += `você  atingiu a maior idade, então você já pode votar!.`
+            } else{
+            res.innerHTML += `você ainda não atingiu a maior idade. Você poderá votar daqui a ${s2} anos!!`
+            }
+            
+        }
+        
     </script>
     
 </body>
