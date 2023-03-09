@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+</head>
+<body>
+    <h1>Sistemas de votação</h1>
+    
+    <input type="text" name="nome" id="nome">
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Ok" onclick="pronto()">
+    <div id="res"></div>
+
+    <script>
+        function pronto()
+
+        var nome = window.document.getElementById("nome")
+        var idade = window.document.getElementById("idade")
+        var res = window.document.getElementById("res")
+        var nome = (nome.value)
+        var idade = Number(idade.value)
+        res.innerHTML = `Olá ${nome} sua idade é ${idade} anos`
+    </script>
+    
+</body>
+</html>
