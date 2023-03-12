@@ -26,14 +26,14 @@
 </body>
     <script>
         function calcular(){
-        var n1 = document.getElementById("number1")
-        var n2 = document.getElementById("number2")
-        var res = document.getElementById("res")
-        var n1 = Number (n1.value)
-        var n2 = Number (n2.value)
-        var s = n1 + n2 
+        let n1 = document.getElementById("number1")
+        let n2 = document.getElementById("number2")
+        let res = document.getElementById("res")
+        n1 = Number (n1.value)
+        n2 = Number (n2.value)
+        let soma = n1 + n2 
      
-        res.innerText = `A soma entre ${n1} e ${n2} é de ${s}.`
+        res.innerText = `A soma entre ${n1} e ${n2} é de ${soma}.`
         }
 
     </script>
