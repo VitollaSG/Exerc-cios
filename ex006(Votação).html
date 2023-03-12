@@ -34,13 +34,13 @@
     <script>
         function pronto(){
 
-            var nome = window.document.getElementById("nome")
-            var idade = window.document.getElementById("anonasc")
-            var res = window.document.getElementById("res")
-            var nome = (nome.value)
-            var idade = Number(anonasc.value)
-            var s1 = Number(2023 - idade)
-            var s2 = Number(18 - s1)
+            let nome = window.document.getElementById("nome")
+            let idade = window.document.getElementById("anonasc")
+            let res = window.document.getElementById("res")
+            nome = (nome.value)
+            idade = Number(anonasc.value)
+            let s1 = Number(2023 - idade)
+            let s2 = Number(18 - s1)
             res.innerHTML = `Olá ${nome}, você tem ${s1} anos, `
         
         if (s1 >= 18) {
