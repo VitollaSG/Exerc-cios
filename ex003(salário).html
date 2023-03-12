@@ -30,18 +30,21 @@
     </style>
 </head>
 <body>
+
     <h1>Informando Salário</h1>
     <input type="text" name="funcionario" id="funcionario">
     <input type="number" name="Salario" id="Salario">
     <input type="button" value="Ok" onclick="ok()"> 
     <div id="provento">...</div>
+
 </body>
 <script>
+
     function ok() {
-    var nome = document.getElementById("funcionario")
-    var sal = document.getElementById("Salario")
-    var nome = nome.value
-    var sal = sal.value
+    let nome = document.getElementById("funcionario")
+    let sal = document.getElementById("Salario")
+    nome = nome.value
+    sal = sal.value
     provento.innerHTML = `O salário de ${nome} é de R$${sal} reais`
     
     }
